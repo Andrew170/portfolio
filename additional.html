@@ -36,11 +36,11 @@
               </div>
               
               <div class="nav-links">
-                <a href="./index.html#projects" target="_blank">Projects</a>
-                <a href="./index.html#about" target="_blank">About me</a>
-                <a href="./index.html#contact" target="_blank">Contact me</a>
-                <a href="./information.html" target="_blank">Information</a>
-                <a href="./additional.html" target="_blank">Additional</a>
+                <a href="./index.html#projects" target="">Projects</a>
+                <a href="./index.html#about" target="">About me</a>
+                <a href="./index.html#contact" target="">Contact me</a>
+                <a href="./information.html" target="">Information</a>
+                <a href="./additional.html" target="">Additional</a>
               </div>
           </div>
       </header>
@@ -103,7 +103,15 @@
         </div>
 
         
-          <model-viewer src="./src/projects/additional/model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.6" environment-image="legacy" shadow-softness="0.81" camera-orbit="317.1deg 63.08deg 45.56m" field-of-view="22.98deg">
+          <model-viewer src="./src/projects/additional/model.glb" 
+          id="reveal" loading="eager" camera-controls touch-action="pan-y" auto-rotate poster="./src/projects/additional/poster.webp"
+                            ar ar-modes="webxr scene-viewer quick-look" 
+                            camera-controls poster="poster.webp" 
+                            shadow-intensity="1.6" 
+                            environment-image="legacy" 
+                            shadow-softness="0.81" 
+                            camera-orbit="317.1deg 63.08deg 45.56m" 
+                            field-of-view="22.98deg">
             <div class="progress-bar hide" slot="progress-bar">
                 <div class="update-bar"></div>
             </div>
